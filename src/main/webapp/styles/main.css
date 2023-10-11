@@ -2200,12 +2200,12 @@ ag-card-work {
 .intro-content.hideContent {
     overflow: hidden;
     line-height: 1.5rem;
-    height: 3.1rem;
-    animation: all 2s ease-in-out;
+    max-height: 3.1rem;
+    transition: max-height 0.15s ease-out;
 }
 
 .intro-content.showContent {
     line-height: 1.5rem;
-    height: auto;
-    animation: all 2s ease-in-out;
+    max-height: 300px;
+   	transition: max-height 0.1s ease-in;
 }
