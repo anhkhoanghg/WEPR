@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Web Programming Assignment</title>
 <link rel="stylesheet" href="styles/main.css">
+<link rel="icon" href="./imgs/favicon/caticon.ico" sizes="16x16">
+
 <link
 	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
 	rel="stylesheet">
@@ -277,7 +279,7 @@
 							<div class="ag-format-container">
 								<div class="ag-courses_box">
 									<div class="ag-courses_item">
-										<a href="#" class="ag-courses-item_link"> <span
+										<a href="/pages/homework1/index" class="ag-courses-item_link"> <span
 											class="ag-courses-item_bg"></span> <span
 											class="ag-courses-item_title">Homework 1</span> <br> <span
 											class=" ag-courses-item_date-box ag-courses-item_date">

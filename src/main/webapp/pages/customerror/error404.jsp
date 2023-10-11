@@ -7,7 +7,9 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<title>404-Error</title>
-	<link rel="stylesheet" href="styles/error404.css">
+	<link rel="stylesheet" href="../../styles/error404.css">
+	<link rel="shortcut icon" href="../../favicon.ico"/>
+
 </head>
 <body>
 	<header>
@@ -19,7 +21,7 @@
 
 	<section class="home">
 		<div class="image">
-			<img src="imgs/Scarecrow.png" alt="Scarecrow.png" width="100px">
+			<img src="../../imgs/Scarecrow.png" alt="Scarecrow.png" width="100px">
 		</div>
 
 		<div class="content">
@@ -27,10 +29,15 @@
 			<p>The page you are looking for might be removed or is
 				temporarily unavailable</p>
 
-			<button class="button-67" role="button">Back to Homepage.</button>
+			<button onClick="openHomepage()" class="button-67" role="button">Back to Homepage.</button>
 		</div>
 
 
 	</section>
+	<script>
+		function openHomepage(){
+			window.location.href="../../"
+		}
+	</script>
 </body>
 </html>

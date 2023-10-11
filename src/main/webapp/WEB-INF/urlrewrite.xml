@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE urlrewrite
+    PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+    "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+	<rule>
+		<condition type="request-uri" operator="equal">/favicon.ico</condition>
+		<from>.*</from>
+		<to last="true">-</to>
+	</rule>
+	<rule>
+		<condition type="request-url" operator="equal">/api/.*</condition>
+		<from>/(.*)</from>
+		<to last="true">-</to>
+	</rule>
+	<rule match-type="regex">
+		<condition type="request-url" operator="notequal">^.*\.jsp$</condition>
+
+		<condition type="request-url" operator="notequal">.?[api]+?(\/)[a-zA-Z]+.$</condition>
+		<condition type="request-url" operator="notequal">/styles/.*</condition>
+		<condition type="request-url" operator="notequal">/imgs/.*</condition>
+		<condition type="request-url" operator="notequal">/layout/.*</condition>
+		<condition type="request-url" operator="notequal">/scripts/.*</condition>
+		<condition type="request-url" operator="notequal">index.jsp</condition>
+		<from>/.+(?:(?!jsp).).$</from>
+		<to type="forward">%{request-uri}.jsp</to>
+	</rule>
+
+
+
+
+</urlrewrite>

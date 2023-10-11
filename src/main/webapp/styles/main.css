@@ -2201,11 +2201,11 @@ ag-card-work {
     overflow: hidden;
     line-height: 1.5rem;
     height: 3.1rem;
-    animation: all 1s ease-in-out;
+    animation: all 2s ease-in-out;
 }
 
 .intro-content.showContent {
     line-height: 1.5rem;
     height: auto;
-    animation: all 1s ease-in-out;
+    animation: all 2s ease-in-out;
 }
