@@ -53,7 +53,7 @@
 			, enter the new quantity and click on the Update button.
 		</p>
 
-		<form action="" method="post">
+		<form action="/pages/homework7/index" method="post">
 			<input type="hidden" name="action" value="shop">
 			<input type="submit" value="Continue Shopping">
 		</form>

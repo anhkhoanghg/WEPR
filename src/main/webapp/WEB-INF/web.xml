@@ -20,7 +20,7 @@
 	</filter-mapping>
 	
 	<error-page>
-		<error-code>550</error-code>
+		<error-code>404</error-code>
 		<location>/pages/customerror/error404.jsp</location>
 	</error-page>
 	

@@ -1,4 +1,4 @@
-8601|86 (the band) - True Life Songs and Pictures|0.0
-pf01|Paddlefoot - The first CD|0.0
-pf02|Paddlefoot - The second CD|0.0
-jr01|Joe Rut - Genuine Wood Grained Finish|0.0
+8601|86 (the band) - True Life Songs and Pictures|2.99
+pf01|Paddlefoot - The first CD|4.49
+pf02|Paddlefoot - The second CD|1.49
+jr01|Joe Rut - Genuine Wood Grained Finish|5.49

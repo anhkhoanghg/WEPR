@@ -26,7 +26,7 @@
 					</td>
 					<td class="right">${product.priceCurrencyFormat}</td>
 					<td>
-						<form action="/api/products" method="post">
+						<form action="/api/cart" method="post">
 							<input type="hidden" name="productCode" value="<c:out value='${product.code}'/>">
 							<input type="submit" value="Add To Cart">
 						</form>
