@@ -1,60 +1,55 @@
 @charset "UTF-8";
 
-/* The styles for the elements */
-body { 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 85%;
-    margin-left: 2em;
-    margin-right: 2em;
-    width: 400px;
+.assign {
+	width: fit-content;
+	display: block;
+	margin: 50px auto 0 auto;
+	border: 1px solid black;
+	padding: 20px;
 }
-h1 {     
-    font-size: 140%;
-    color: teal;
-    margin-bottom: .5em;    
-}
-h2 {     
-    font-size: 120%;
-    color: teal;
-    margin-bottom: .5em;    
-}
-label {
+.assign label {
     float: left;
     width: 7em;
     margin-bottom: 0.5em;
     font-weight: bold;
 }
-input[type="text"], input[type="email"] {  /* An attribute selector */
+.assign input[type="text"], input[type="email"] {  /* An attribute selector */
     width: 15em;
     margin-left: 0.5em;    
     margin-bottom: 0.5em;
 }
-span {
+.assign span {
     margin-left: 0.5em;    
     margin-bottom: 0.5em;    
 }
-br {
+.assign br {
     clear: both;
 }
 
 /* The styles for the classes */
-.pad_top {
+.assign .pad_top {
     padding-top: 0.25em;
 }
-.margin_left {
+.assign .margin_left {
     margin-left: 0.5em;
 }
 
-/* The styles for a table */
-table {
-    border: 1px solid black;
-    border-collapse: collapse;   
-}
-th, td {
-    border: 1px solid black;
-    text-align: left;
-    padding: .5em;
-}
-.right {
-    text-align: right;
+
+
+.assign .button-container {
+            display: flex;
+            
+            align-items: center;
+            height: 10vh; 
+        }
+        .goback-button {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: teal;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        } 
+.assign .goback-button:hover {
+  opacity: 75%;
 }

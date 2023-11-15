@@ -10,6 +10,11 @@
 </head>
 <body>
 	<div class="text"><p>500</p></div>
+	<div style="margin:20px">
+		<p>Type: ${pageContext.exception["class"]}</p>
+		<p>Message: ${pageContext.exception.message}</p>
+	</div>
+	
 <div class="container">
   <!-- caveman left -->
   <div class="caveman">
@@ -48,6 +53,17 @@
     <div class="arm-right"><div class="club"></div></div>    
   </div>
 </div>
+<button onClick="openHomepage()" class="button-77 " role="button">Back to Homepage.</button>
+
+
+<script>
+	function openHomepage(){
+		window.location.href="../../"
+	}
+</script>
+
+
+
 
 </body>
 </html>
