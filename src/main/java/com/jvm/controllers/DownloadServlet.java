@@ -121,11 +121,17 @@ public class DownloadServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("user", user);
 
-        // add a cookie that stores the user's email to browser
-        Cookie c = new Cookie("userEmail", email);
-        c.setMaxAge(60 * 60 * 24 * 365 * 3); // set age to 3 years
-        c.setPath("/");                      // allow entire app to access it
-        response.addCookie(c);
+        
+        Cookie c1 = new Cookie("emailCookie", email);
+        c1.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+        c1.setPath("/");                      // allow entire app to access it
+        response.addCookie(c1);
+
+        // add a cookie that stores the user's as a cookie
+        Cookie c2 = new Cookie("firstNameCookie", firstName);
+        c2.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+        c2.setPath("/");                      // allow entire app to access it
+        response.addCookie(c2);
 
         // create and return a URL for the appropriate Download page
         String productCode = (String) session.getAttribute("productCode");

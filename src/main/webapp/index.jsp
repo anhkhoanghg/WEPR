@@ -241,6 +241,8 @@
 										<a href="/pages/homework6/index" class="ag-courses-item_link">
 											<span class="ag-courses-item_bg"></span>
 											<span class="ag-courses-item_title">Homework 6</span>
+											<br>
+											<span class=" ag-courses-item_date-box ag-courses-item_date"> C8E1 </span>
 										</a>
 									</div>
 
@@ -248,6 +250,8 @@
 										<a href="/pages/homework7/index" class="ag-courses-item_link">
 											<span class="ag-courses-item_bg"></span>
 											<span class="ag-courses-item_title">Homework 7</span>
+											<br>
+											<span class=" ag-courses-item_date-box ag-courses-item_date"> Card List </span>
 										</a>
 									</div>
 
