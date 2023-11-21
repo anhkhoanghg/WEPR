@@ -9,7 +9,7 @@
 					<span class="fa fa-solid fa-user"></span>
 				</a>
 			</li>
-			<li>
+<!-- 			<li>
 				<a>
 					<span class='fa fa-solid fa-arrow-right'></span>
 				</a>
@@ -18,7 +18,7 @@
 				<a>
 					<span class='fa fa-solid fa-arrow-left'></span>
 				</a>
-			</li>			
+			</li>		 -->	
 			<li>
 				<a >
 					<span id="previousPage" class='fa fa-solid fa-chevron-left'></span>
@@ -27,6 +27,7 @@
 		</ul>
 	</div>
 <script type="text/javascript">
+	console.log("History aa: ", history)
 	const actionButton = document.querySelector('.action-button');
 	
 	//Add a click event listener to the button
@@ -41,6 +42,8 @@
 	
 	document.getElementById("previousPage").addEventListener("click", function() {
 	    history.back();
+	    console.log("History: ", history)
 	  });
+	
 </script>
 </footer>
