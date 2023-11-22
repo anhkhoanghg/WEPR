@@ -12,7 +12,25 @@
 	<jsp:include page="../../includes/header.jsp"></jsp:include>
 	<div class="assign">
 		<h1>List of albums</h1>
-		<p>User Email: ${cookie.userEmail.value}</p>
+		<%-- <p>User Email: ${cookie.userEmail.value}</p> --%>
+		<% 
+        Cookie[] cookies = request.getCookies();
+        String userEmail = null;
+
+        
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if ("emailCookie".equals(cookie.getName())) {
+                    userEmail = cookie.getValue();
+                    break;
+                }
+            }
+        }
+        
+        if (userEmail != null) { 
+        %>
+            <p>User Email: <%= userEmail %></p>
+        <% } %> 
 		
 		<p>
 		<a href="/api/download?action=checkUser&amp;productCode=s1">
